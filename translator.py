@@ -6,6 +6,7 @@ def translate_text():
  text = input_text.get("1.0", END).strip()
  translated = GoogleTranslator(source='en', target='te').translate(text)
  output_text.delete("1.0", END)
+ 
  output_text.insert(END, translated)
 def clear_text():
     input_text.delete("1.0",END)
